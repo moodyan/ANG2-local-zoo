@@ -11,27 +11,27 @@ import { Animal } from './animal.model';
     <h3>Our Current Animals:</h3>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <hr>
-      <!-- <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
-      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal> -->
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+      <!-- <new-animal (newAnimalSender)="addAnimal($event)"></new-animal> -->
   </div>
   `
 })
 
 export class AppComponent {
   selectedAnimal: Animal = null;
-  // newAnimalForm: boolean = false;
+  newAnimalForm: boolean = false;
 
   masterAnimalList: Animal[] = [
-    new Animal('Reginald', 'Red Panda', 1, 'Herbivore', 'Mountain Range', 'Male', 'Likes', 'Dislikes', 3),
+    new Animal('Reginald', 'Red Panda', 1, 'Herbivore', 'Mountain Range', 'Male', 'Climbing trees', 'Pineapples', 3),
     new Animal('Moon', 'Arctic Fox', 2, 'Carnivore', 'Northern Trail', 'Female', 'Cool shade', 'Loud noises', 5),
     new Animal('Prince', 'Ocelot', 4, 'Carnivore', 'Tropical Rain Forest Building', 'Male', 'Laying in the sunshine', 'Toys that are not rope-based', 6),
     new Animal('Tinkerbell', 'Northwest Black Tailed Deer', 8, 'Herbivore', 'Northern Trail', 'Female', 'Delicate roots and leaves', 'Loud Noises', 2),
   ];
 
-  // finishedEditing() {
-  //     this.selectedAnimal = null;
-  //   }
-  //
+  finishedEditing() {
+      this.selectedAnimal = null;
+    }
+
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
   }
@@ -40,7 +40,7 @@ export class AppComponent {
   //   this.masterAnimalList.push(newAnimalFromChild)
   // }
   //
-  // showNewAnimalForm() {
-  //   this.newAnimalForm = true;
-  // }
+  showNewAnimalForm() {
+    this.newAnimalForm = true;
+  }
 }
