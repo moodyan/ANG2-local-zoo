@@ -9,10 +9,17 @@ import { Animal } from './animal.model';
   <div class="container">
     <h1>Local Zoo</h1>
     <h3>Our Current Animals:</h3>
+    <div id="visitor-portal" *ngIf="visitorPortal">
+      <visitor-animal-list [childAnimalList]="masterAnimalList"></visitor-animal-list>
+      <button (click)="showEmployeePortal()" id="show-employee" >Show Employee Portal</button>
+    </div>
+    <div id="employee-portal" *ngIf="employeePortal">
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <hr>
       <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+      <button (click)="showVisitorPortal()" id="show-visitor" >Show Visitor Portal</button>
+    </div>
   </div>
   `
 })
@@ -20,6 +27,8 @@ import { Animal } from './animal.model';
 export class AppComponent {
   selectedAnimal: Animal = null;
   newAnimalForm: boolean = false;
+  employeePortal: boolean = false;
+  visitorPortal: boolean = true;
 
   masterAnimalList: Animal[] = [
     new Animal('Reginald', 'Red Panda', 1, 'Herbivore', 'Asian Passage', 'Male', 'Climbing trees', 'Pineapples', 3),
@@ -42,5 +51,15 @@ export class AppComponent {
 
   showNewAnimalForm() {
     this.newAnimalForm = true;
+  }
+
+  showEmployeePortal() {
+    this.employeePortal = true;
+    this.visitorPortal = false;
+  }
+
+  showVisitorPortal() {
+    this.employeePortal = false;
+    this.visitorPortal = true;
   }
 }
