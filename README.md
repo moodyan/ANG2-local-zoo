@@ -1,4 +1,4 @@
-# Doctor Lookup
+# Zoo Tracker
 
 #### _App created for Epicodus Independent Project, JavaScript - Week Two. Practice using Angular2. July 7th, 2017_
 
@@ -12,11 +12,12 @@ _An app that allows users (zoo employees) to track their animals._
 
 | Description  | Input Example | Output Example |
 | ------------- | ------------- | ------------- |
-| The program allows users to view a list of all animals in the system.  | View All Animals  | Returns all animals. (e.g. Species: "Northwest Black Tailed Deer", Name: "Tinkerbell", Age: 8, Diet: "Herbivore", Location: "Northern Trail", Caretakers: 2, Sex: "Female", Likes: "Delicate roots and leaves", Dislikes: "Loud Noises")  |
-| The program allows users to add a new animal to the system.  | Species: “Ocelot”, Name: “Prince”, Age: 4, Diet: “Carnivore”, Location: "Tropical Rain Forest Building”, Caretakers: 6, Sex: “Male”, Likes: "Laying in the sunshine”, Dislikes: "Toys that are not rope-based"  | --  |
-| The program allows users to filter animals by age.  | Animals younger than 2  | Moon, Jasmine, Peter  |
-| The program allows users to edit an animal's details.  | Edit Prince, Age: 4, Caretakers: 6  | Name: The Prince, Age: 5, Caretakers: 5  |
-| The program displays the total number of caretakers the zoo needs to have on staff for the animals.  | --  | Total Caretakers Needed: 54  |
+| The program allows visitors/employees to view a list of all animals at the zoo.  | View All Animals  | Returns all animals. (e.g. Species: "Northwest Black Tailed Deer", Name: "Tinkerbell", Age: 8, Diet: "Herbivore", Location: "Northern Trail", Caretakers: 2, Sex: "Female", Likes: "Delicate roots and leaves", Dislikes: "Loud Noises")  |
+| The program allows visitors to filter animals by location.  | Northern Frontier  | Moon, Jasmine  |
+| The program allows employees to add a new animal to the system.  | Species: “Ocelot”, Name: “Prince”, Age: 4, Diet: “Carnivore”, Location: "Tropical Rain Forest Building”, Caretakers: 6, Sex: “Male”, Likes: "Laying in the sunshine”, Dislikes: "Toys that are not rope-based"  | --  |
+| The program allows employees to filter animals by age.  | Animals younger than 2  | Moon, Jasmine, Peter  |
+| The program allows employees to edit an animal's details.  | Edit Prince, Age: 4, Caretakers: 6  | Name: The Prince, Age: 5, Caretakers: 5  |
+| The program displays to the employees the total number of caretakers the zoo needs to have on staff for the animals.  | --  | Total Caretakers Needed: 54  |
 | MAYBE: The program allows users to see when the animal was admitted into the zoo.  | --  | Zoe was entered on June 15th, 2010. She has been here for 7 years and 22 days.  |
 
 ## Setup/Installation Requirements
