@@ -4,18 +4,23 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
-    <div *ngIf="childSelectedAnimal">
+    <div id="form" *ngIf="childSelectedAnimal">
       <h3>{{childSelectedAnimal.name}}</h3>
       <label>Edit name:</label>
       <input [(ngModel)]="childSelectedAnimal.name">
+      <br>
       <label>Edit age:</label>
       <input [(ngModel)]="childSelectedAnimal.age">
+      <br>
       <label>Edit Number of Caretakers:</label>
       <input [(ngModel)]="childSelectedAnimal.caretakers">
+      <br>
       <label>Edit Likes:</label>
-      <input [(ngModel)]="childSelectedAnimal.likes">
+      <textarea rows="3" [(ngModel)]="childSelectedAnimal.likes"></textarea>
+      <br>
       <label>Edit Dislikes:</label>
-      <input [(ngModel)]="childSelectedAnimal.dislikes">
+      <textarea rows="3" [(ngModel)]="childSelectedAnimal.dislikes"></textarea>
+      <br>
       <button (click)="doneButtonClicked()">Done</button>
     </div>
   `

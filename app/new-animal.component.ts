@@ -6,7 +6,6 @@ import { Animal } from './animal.model';
   template: `
     <button (click)="showNewAnimalForm()" *ngIf="newAnimalButton">Add a New Animal</button>
     <div id="form" *ngIf="newAnimalForm">
-    <h2>New Animal</h2>
       <h3>Add a New Animal</h3>
       <label>Name:</label>
       <input #newName>
@@ -19,8 +18,9 @@ import { Animal } from './animal.model';
       <br>
       <label>Diet:</label>
       <select #newDiet>
-        <option value="Omnivore">Omnivore</option>
         <option value="Herbivore">Herbivore</option>
+        <option value="Omnivore">Omnivore</option>
+        <option value="Carnivore">Carnivore</option>
       </select>
       <br>
       <label>Sex:</label>
@@ -62,7 +62,6 @@ export class NewAnimalComponent {
     { value: 'Northern Frontier', display: 'Northern Frontier'},
     { value: 'Northwest Trail', display: 'Northwest Trail'},
     { value: 'The Outback', display: 'The Outback'},
-    { value: 'Panda Canyon', display: 'Panda Canyon'},
     { value: 'Urban Jungle', display: 'Urban Jungle'}
   ];
 

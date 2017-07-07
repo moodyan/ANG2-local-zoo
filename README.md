@@ -6,7 +6,7 @@
 
 ## Description
 
-_An app that allows users (zoo employees) to track their animals._
+_An app that allows zoo visitors to view all the animals at the zoo and allows employees to track, edit, and add to their animals._
 
 ## Program Specifications
 
@@ -17,7 +17,7 @@ _An app that allows users (zoo employees) to track their animals._
 | The program allows employees to add a new animal to the system.  | Species: “Ocelot”, Name: “Prince”, Age: 4, Diet: “Carnivore”, Location: "Tropical Rain Forest Building”, Caretakers: 6, Sex: “Male”, Likes: "Laying in the sunshine”, Dislikes: "Toys that are not rope-based"  | --  |
 | The program allows employees to filter animals by age.  | Animals younger than 2  | Moon, Jasmine, Peter  |
 | The program allows employees to edit an animal's details.  | Edit Prince, Age: 4, Caretakers: 6  | Name: The Prince, Age: 5, Caretakers: 5  |
-| The program displays to the employees the total number of caretakers the zoo needs to have on staff for the animals.  | --  | Total Caretakers Needed: 54  |
+| MAYBE: The program displays to the employees the total number of caretakers the zoo needs to have on staff for the animals.  | --  | Total Caretakers Needed: 54  |
 | MAYBE: The program allows users to see when the animal was admitted into the zoo.  | --  | Zoe was entered on June 15th, 2010. She has been here for 7 years and 22 days.  |
 
 ## Setup/Installation Requirements

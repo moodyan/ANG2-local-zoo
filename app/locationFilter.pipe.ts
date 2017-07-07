@@ -35,6 +35,5 @@ let locations = [
   { value: 'Northern Frontier', display: 'Northern Frontier'},
   { value: 'Northwest Trail', display: 'Northwest Trail'},
   { value: 'The Outback', display: 'The Outback'},
-  { value: 'Panda Canyon', display: 'Panda Canyon'},
   { value: 'Urban Jungle', display: 'Urban Jungle'}
 ];
