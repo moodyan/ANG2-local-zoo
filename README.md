@@ -49,11 +49,11 @@ _If you run into any issues or have questions, ideas or concerns, please contact
 
 ## Technologies Used
 
-**Languages:** HTML, CSS, SASS, JavaScript
+**Languages:** HTML, CSS, SASS, JavaScript, TypeScript
 
 **Package Managers:** Gulp, Bower
 
-**Frameworks/Libraries:** Angular, Bootstrap
+**Frameworks/Libraries:** Angular
 
 ### License
 
