@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
-// import { styles } from './styles.model';
 
 @Component({
   selector: 'animal-list',
